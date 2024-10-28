@@ -12,26 +12,32 @@ ul,ol {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 .wrap {
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 }
 .flex {
     display: flex;
     
 
 }
-.align-center {
+.card {
+    display: flex;
     align-items: center;
-}
-.gap {
+    background-color: black;
     gap:10px;
+    
 }
+
+
 .block {
     display: block;
+    width: 180px;
+    aspect-ratio: 1/1;
 }
+
 
 .title {
     color:rgba(219, 20, 20, 0.856);
@@ -45,10 +51,13 @@ ul,ol {
 
 .col-33 {
     width: calc(100%/3);
-    background-color: black;
     flex-grow: 1;
+    
+    padding: 10px;
+    
 }
 .team-details {
+    width: 100%;
     color:white;
     text-wrap: nowrap;
     flex-grow:1;
