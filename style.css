@@ -52,14 +52,29 @@ ul,ol {
 .col-33 {
     width: calc(100%/3);
     flex-grow: 1;
-    
     padding: 10px;
     
 }
 .team-details {
-    width: 100%;
+    min-width: 100%;
     color:white;
     text-wrap: nowrap;
     flex-grow:1;
 }
+
+
+/*media query*/
+@media (max-width: 990px) {
+    
+    .col-33 {
+        width: 50%;
+    }
+}
+@media (max-width: 768px) {
+    
+    .col-33 {
+        width: 100%;
+    }
+}
+
 
