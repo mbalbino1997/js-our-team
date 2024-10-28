@@ -10,27 +10,27 @@
     <h1 class="title">Meet our Team</h1>
     <section>
         <div class="container">
-            <div id="row-team-cards" class="row flex wrap gap">
+            <div id="row-team-cards" class="row flex wrap">
             </div>
 
         </div>   
     </section>
-    <form id="form-add" class="container" action="submit">
-        <div class="row">
-            <div class="col">
+    <form id="form-add" class="container background-dark" action="submit">
+        <div class="flex wrap">
+            <div class="col-33">
                 <label for="name">Nome e cognome</label>
-                <input type="text" name="name" placeholder="Inserisci nome e cognome">
+                <input id="name" type="text" name="name" placeholder="Inserisci nome e cognome">
             </div>
-            <div class="col">
+            <div class="col-33">
                 <label for="role">Ruolo</label>
-                <input type="text" name="role" placeholder="Inserisci il ruolo">
+                <input id="role" type="text" name="role" placeholder="Inserisci il ruolo">
             </div>
-            <div class="col">
+            <div class="col-33">
                 <label for="email">Email</label>
-                <input type="text" name="email" placeholder="Inserisci email">
+                <input id="email" type="email" name="email" placeholder="Inserisci email">
             </div>
-            <div class="col">
-                <button class="btn">AGGIUNGI UN MEMBRO DEL TEAM</button>
+            <div class="col-33 button">
+                <button type="submit" class="btn">AGGIUNGI UN MEMBRO DEL TEAM</button>
             </div>
         </div>
         

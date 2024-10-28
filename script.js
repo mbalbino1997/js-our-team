@@ -39,6 +39,12 @@ const teamMembers = [
 
 
 const rowTeamCards= document.getElementById("row-team-cards");
+const formAdd = document.getElementById("form-add");
+const name = document.getElementById("name");
+const role = document.getElementById("role");
+const email = document.getElementById("email");
+const img = "./img/immagineacaso.jfif"
+
 
 for (let i=0; i<teamMembers.length;i++) {
   const { name, role, email, img } = teamMembers[i];
@@ -54,6 +60,23 @@ for (let i=0; i<teamMembers.length;i++) {
         </div>
       </div>`
 }
+
+formAdd.addEventListener("submit", function(event){
+  event.preventDefault();
+  rowTeamCards.innerHTML+=
+  `<div class="col-33">
+        <div class="card">
+          <img class="block" src="./${img}" alt="">
+          <div class="team-details">
+              <h1>${name.value}</h1>
+              <p>${role.value}</p>
+              <p>${email.value}</p>
+          </div>
+        </div>
+      </div>`
+
+
+})
 
 
 

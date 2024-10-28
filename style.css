@@ -65,7 +65,9 @@ ul,ol {
 .none {
     display: none;
 }
-
+.button {
+    text-align: center;
+}
 
 .btn {
     display: inline-block;
@@ -86,6 +88,9 @@ ul,ol {
 .btn:hover {
     background-color: #0056b3;
     transform: scale(1.05);
+}
+.background-dark {
+    background-color: rgba(156, 109, 38, 0.733);
 }
 
 /*media query*/
