@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+ul,ol {
+    list-style: none;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.flex {
+    display: flex;
+    
+
+}
+.align-center {
+    align-items: center;
+}
+.gap {
+    gap:10px;
+}
+.block {
+    display: block;
+}
+
+.title {
+    color:rgba(219, 20, 20, 0.856);
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    text-shadow: 10px;
+    text-align: center;
+    margin:20px 0;
+}
+
+.col-33 {
+    width: calc(100%/3);
+    background-color: black;
+    flex-grow: 1;
+}
+.team-details {
+    color:white;
+    text-wrap: nowrap;
+    flex-grow:1;
+}
+
