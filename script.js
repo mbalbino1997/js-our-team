@@ -36,3 +36,20 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+
+const rowTeamCards= document.getElementById("row-team-cards");
+
+for (let i=0; i<teamMembers.length;i++) {
+    rowTeamCards.innerHTML+=
+    `<div class="col-33">
+        <div class="card">
+          <img class="block" src="./${teamMembers[i].img}" alt="">
+          <div class="team-details">
+              <h1>${teamMembers[i].name}</h1>
+              <p>${teamMembers[i].role}</p>
+              <p>${teamMembers[i].email}</p>
+          </div>
+        </div>
+      </div>`
+}
